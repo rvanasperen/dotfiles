@@ -1,2 +1,8 @@
-my doots
+My doots
+
+Programs needed:
+
+- git
+- lazygit
+- rg (ripgrep)
 
