@@ -1,8 +1,6 @@
-# Doots 🎺💀
+# Dotfiles
 
-My dotfiles I'm using on my different machines.
-
-Tested and working on Ubuntu 24.04 LTS, Arch Linux, and macOS.
+My doots 🎺💀
 
 ## Requirements
 
