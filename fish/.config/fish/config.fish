@@ -5,6 +5,10 @@ if test -d /opt/homebrew
     fish_add_path /opt/homebrew/sbin
 end
 
+if test -d ~/.composer
+    fish_add_path ~/.composer/vendor/bin
+end
+
 set -U fish_greeting
 
 set -gx EDITOR nvim
