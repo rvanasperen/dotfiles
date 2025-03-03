@@ -4,26 +4,22 @@ My doots 🎺💀
 
 ## Requirements
 
-Basic requirements:
-
 - autojump
 - bat
 - curl
 - eza
 - fish
-- git
-- stow
-
-Extended requirements:
-
 - fzf (LazyVim)
+- git
 - lazygit (LazyVim)
-- ripgrep (LazyVim)
+- rg (LazyVim)
+- stow
 
 ## Installation
 
 ```bash
 git clone [repo] ~/.dotfiles
 cd ~/.dotfiles
+./check.sh
 stow [package]
 ```
