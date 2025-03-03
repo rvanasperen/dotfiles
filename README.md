@@ -8,6 +8,7 @@ Basic requirements:
 
 - autojump
 - bat
+- curl
 - eza
 - fish
 - git
@@ -15,8 +16,9 @@ Basic requirements:
 
 Extended requirements:
 
-- lazygit (nvim)
-- ripgrep (nvim)
+- fzf (LazyVim)
+- lazygit (LazyVim)
+- ripgrep (LazyVim)
 
 ## Installation
 
