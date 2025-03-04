@@ -1,7 +1,8 @@
+set previewer ~/.config/lf/previewer.sh
+
 cmd open ${{
     case "$(file --mime-type "$(readlink -f $f)" -b)" in
         text/*|application/json) $EDITOR "$fx" ;;
         *) xdg-open "$fx" 2>/dev/null || open "$fx" ;;
     esac
 }}
-
