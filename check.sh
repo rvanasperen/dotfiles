@@ -13,6 +13,7 @@ fish
 fzf
 git
 lazygit
+lf
 node
 npm
 php
