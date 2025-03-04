@@ -3,14 +3,23 @@
 REQUIRED_BINARIES="
 autojump
 bat|batcat
+btop
+composer
 curl
+docker
 eza
-fish
+fastfetch
+fishU
 fzf
 git
 lazygit
+node
+npm
+php
 rg
 stow
+tldr
+tmux
 "
 
 MISSING=0
@@ -29,7 +38,7 @@ echo "$REQUIRED_BINARIES" | while IFS= read -r entry; do
     done
 
     if [ $found -eq 0 ]; then
-        echo "❌ Missing: $entry (at least one required)"
+        echo "❌ Missing: $entry"
         MISSING=1
     fi
 done

@@ -4,16 +4,7 @@ My doots 🎺💀
 
 ## Requirements
 
-- autojump
-- bat
-- curl
-- eza
-- fish
-- fzf (LazyVim)
-- git
-- lazygit (LazyVim)
-- rg (LazyVim)
-- stow
+See [check.sh](check.sh) for a list of required binaries.
 
 ## Installation
 
