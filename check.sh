@@ -9,7 +9,7 @@ curl
 docker
 eza
 fastfetch
-fishU
+fish
 fzf
 git
 lazygit
