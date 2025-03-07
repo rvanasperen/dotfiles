@@ -1,7 +1,5 @@
-function l --wraps=eza
+function ls --wraps=eza
     eza \
-        --group \
         --group-directories-first \
-        --long \
         $argv
 end
