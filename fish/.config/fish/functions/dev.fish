@@ -17,8 +17,28 @@ function dev
         return 1
     end
 
+    # Fun stuff
     set hour (date +"%H")
+
     if test $hour -ge 0 -a $hour -lt 7
-        echo "Whoops it's already $(date +"%H:%M")! Better get some zzz. 😴"
+        set time (date +"%H:%M")
+
+        set messages \
+            "Whoops it's already $time! Better get some zzz. 😴" \
+            "Bro, it's $time... Get some zzz. 😴" \
+            "Dude, it's $time. Do you even sleep? 🛌💤" \
+            "I should go to bed, it's $time. My code will still be here tomorrow. ⏳" \
+            "It's $time... you're officially nocturnal now. 🦉 (who?)" \
+            "3 AM thoughts hit different, huh? It's $time. Sleep? 😵‍💫" \
+            "Wtf it's already $time? It was 23:00 like 30 minutes ago. 😱"
+
+        # Print message
+        set random_message (random choice $messages)
+        echo $random_message
+
+        # Log time
+        set timestamp (date +"%Y-%m-%d %H:%M:%S")
+        set project_name (basename $PWD)
+        echo "[$timestamp] - I spent until $time working on $project_name" >> ~/.late_night_coding.log
     end
 end
