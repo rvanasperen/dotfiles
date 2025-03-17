@@ -1,7 +1,7 @@
 function dev
     # Laravel
     if test -f ./artisan
-        if test -f ./vendor/bin/sail && test -f ./docker-compose.yml
+        if test -f ./vendor/bin/sail -a  -f ./docker-compose.yml
             echo "Starting Laravel app via Sail"
             ./vendor/bin/sail up -d
             ./vendor/bin/sail npm run dev
@@ -25,9 +25,9 @@ function dev
 
         set messages \
             "Whoops it's already $time! Better get some zzz. 😴" \
-            "Bro, it's $time... Get some zzz. 😴" \
+            "Bro, it's $time... Time to get some zzz. 😴" \
             "Dude, it's $time. Do you even sleep? 🛌💤" \
-            "I should go to bed, it's $time. My code will still be here tomorrow. ⏳" \
+            "You should go to bed, it's $time. Your code will still be here tomorrow. ⏳" \
             "It's $time... you're officially nocturnal now. 🦉 (who?)" \
             "3 AM thoughts hit different, huh? It's $time. Sleep? 😵‍💫" \
             "Wtf it's already $time? It was 23:00 like 30 minutes ago. 😱"
