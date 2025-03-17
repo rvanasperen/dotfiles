@@ -16,4 +16,9 @@ function dev
         echo "Unknown project type"
         return 1
     end
+
+    set hour (date +"%H")
+    if test $hour -ge 0 -a $hour -lt 7
+        echo "Whoops it's already $(date +"%H:%M")! Better get some zzz. 😴"
+    end
 end
