@@ -1,7 +1,7 @@
 function dev
     # Laravel
     if test -f ./artisan
-        if test -f ./vendor/bin/sail -a  -f ./docker-compose.yml
+        if test -f ./vendor/bin/sail -a \( -f ./docker-compose.yml -o -f ./compose.yaml \)
             echo "Starting Laravel app via Sail"
             ./vendor/bin/sail up -d
             ./vendor/bin/sail npm run dev
