@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 REQUIRED_BINARIES="
-autojump
 bat|batcat
 btop
 composer
@@ -21,6 +20,7 @@ rg
 stow
 tldr
 tmux
+zoxide
 "
 
 MISSING=0
