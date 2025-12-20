@@ -4,6 +4,9 @@ function dev
         if test -f ./vendor/bin/sail -a \( -f ./docker-compose.yml -o -f ./compose.yaml \)
             echo "Starting Laravel app via Sail"
             ./vendor/bin/sail up -d
+            if ! test -d ./node_modules/
+                ./vendor/bin/sail npm install
+            end
             ./vendor/bin/sail npm run dev
             ./vendor/bin/sail down
         else
