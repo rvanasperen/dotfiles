@@ -2,7 +2,6 @@
 
 REQUIRED_BINARIES="
 bat|batcat
-btop
 composer
 curl
 docker
